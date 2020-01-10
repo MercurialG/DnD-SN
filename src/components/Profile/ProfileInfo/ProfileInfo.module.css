@@ -1,0 +1,12 @@
+.content {
+    grid-area: content;
+    background-color: antiquewhite;
+}
+
+.ba {
+    height: 230px;
+}
+
+.ava {
+    height: 80px;
+}
