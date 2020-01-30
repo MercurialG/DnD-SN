@@ -1,4 +1,4 @@
-import classes from "./Dialogues.module.css";
+import classes from "../Dialogues.module.css";
 import {NavLink} from "react-router-dom";
 import React from "react";
 

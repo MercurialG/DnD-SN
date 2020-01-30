@@ -4,7 +4,9 @@ display: grid;
     padding: 10px;
 }
 .diaItems{}
-.messages{}
+.messages .message{
+    color: aqua;
+}
 
 .dialogues a{
     color: black;
