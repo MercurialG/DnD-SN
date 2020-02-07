@@ -3,15 +3,11 @@ display: grid;
     grid-template-columns: 2fr 10fr;
     padding: 10px;
 }
-.diaItems{}
-.messages .message{
-    color: aqua;
-}
 
 .dialogues a{
     color: black;
     text-decoration: none;
 }
-.a .active{
+.active {
     color: gold;
 }
