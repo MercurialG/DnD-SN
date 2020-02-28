@@ -3,4 +3,8 @@
     display: grid;
     padding: 30px;
     border: solid white 3px;
+    :hover {
+        color: black;
+        cursor: pointer;
+    }
 }

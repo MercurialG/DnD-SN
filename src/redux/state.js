@@ -9,7 +9,8 @@ let state = {
             {id: 4, message: 'Subscribe!', likesCount: 3},
             {id: 5, message: 'Like me!', likesCount: 9890},
             {id: 6, message: 'Hi! This is my first post!', likesCount: 1},
-        ]
+        ],
+        newPostText: 'IpIp'
     },
     messagesPage: {
         messages: [
@@ -33,16 +34,22 @@ let state = {
     }
 }
 
+window.state = state;
 
-export let addPost = (postMessage) => {
+export let addPost = () => {
     let newPost = {
         id: 5,
-        message: postMessage,
+        message: state.profilePage.newPostText,
         likesCount: 0
     }
-    state.profilePage.posts.push(newPost)
+    state.profilePage.posts.push(newPost);
+    state.profilePage.newPostText = '';
     rerenderEntireTree(state);
 }
 
+export let updateNewPostText = (newText) => {
+    state.profilePage.newPostText = newText;
+    rerenderEntireTree(state);
+}
 
 export default state;
